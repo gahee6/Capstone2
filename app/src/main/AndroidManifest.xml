@@ -23,9 +23,7 @@
         <activity android:name=".activity.MainActivity"></activity>
         <activity android:name=".activity.BoardDetailActivity"></activity>
         <activity android:name=".activity.BoardUpdateActivity"></activity>
-        <activity android:name=".activity.MyBoardActivity"></activity>
         <activity android:name=".activity.ReportCreateActivity"></activity>
-        <activity android:name=".activity.ReportMainActivity"></activity>
         <activity android:name=".activity.ReportDetailActivity" ></activity>
         <activity android:name=".activity.ReportUpdateActivity"></activity>
         <activity android:name=".activity.MyReportActivity"></activity>

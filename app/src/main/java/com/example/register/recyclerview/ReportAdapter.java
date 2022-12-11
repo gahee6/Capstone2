@@ -40,7 +40,6 @@ public class ReportAdapter extends RecyclerView.Adapter<ReportAdapter.CustomView
         holder.nname.setText(arrayList.get(position).getNname());
         holder.id.setText(String.valueOf(arrayList.get(position).getId()));
 
-        //리스크뷰를 클릭했을때 토스트를 띄움(잘 작동하는지 테스트하기 위함)
         holder.itemView.setTag(position);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override

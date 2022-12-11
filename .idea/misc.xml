@@ -3,6 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudio-Project/howtime_android/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidStudio-Project/howtime_android/app/src/main/res/layout/board_create.xml" value="0.1983695652173913" />
+        <entry key="..\:/AndroidStudio-Project/howtime_android/app/src/main/res/layout/board_update.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidStudio-Project/howtime_android/app/src/main/res/layout/item_list.xml" value="0.1983695652173913" />
+        <entry key="..\:/AndroidStudio-Project/howtime_android/app/src/main/res/layout/listview_item.xml" value="0.33605072463768115" />
+        <entry key="..\:/AndroidStudio-Project/howtime_android/app/src/main/res/layout/login.xml" value="0.1983695652173913" />
+        <entry key="..\:/AndroidStudio-Project/howtime_android/app/src/main/res/layout/main.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidStudio-Project/howtime_android/app/src/main/res/layout/myboard.xml" value="0.33605072463768115" />
+        <entry key="..\:/AndroidStudio-Project/howtime_android/app/src/main/res/layout/myreport.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidStudio-Project/howtime_android/app/src/main/res/layout/report.xml" value="0.33" />
+        <entry key="..\:/AndroidStudio-Project/howtime_android/app/src/main/res/layout/report_detail.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidStudio-Project/howtime_android/app/src/main/res/layout/report_item_list.xml" value="0.33" />
+        <entry key="..\:/AndroidStudio-Project/howtime_android/app/src/main/res/layout/report_main.xml" value="0.33" />
+        <entry key="..\:/AndroidStudio-Project/howtime_android/app/src/main/res/layout/report_menu.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidStudio-Project/howtime_android/app/src/main/res/menu/bottom_menu.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidStudio-Project/howtime_android/app/src/main/res/menu/menu.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/ghkdd/AndroidStudioProjects/register/app/src/main/res/drawable/add.xml" value="0.201" />
         <entry key="..\:/Users/ghkdd/AndroidStudioProjects/register/app/src/main/res/drawable/ic_baseline_format_list_bulleted_24.xml" value="0.201" />
         <entry key="..\:/Users/ghkdd/AndroidStudioProjects/register/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1105" />

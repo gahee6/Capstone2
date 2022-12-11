@@ -134,7 +134,7 @@ public class BoardDetailActivity extends AppCompatActivity {
         txtHashtag2 = (TextView) findViewById(R.id.txtHashtag2);
         txtRequirement = (TextView) findViewById(R.id.txtRequirement);
         btnBack = (ImageButton) findViewById(R.id.btnBack);
-        btnMyBoard = (Button) findViewById(R.id.btnMyBoard);
+        //btnMyBoard = (Button) findViewById(R.id.btnMyBoard);
         Intent boardIdIntent = getIntent();
         boardId = Integer.parseInt(boardIdIntent.getStringExtra("boardId"));
         btnMenu = (ImageButton) findViewById(R.id.btnMenu);

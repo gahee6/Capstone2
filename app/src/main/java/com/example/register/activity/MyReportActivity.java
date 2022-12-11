@@ -80,7 +80,7 @@ public class MyReportActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked){
-                    Intent intent = new Intent(MyReportActivity.this, MyBoardActivity.class);
+                    Intent intent = new Intent(MyReportActivity.this, Board.class);
                     startActivity(intent);
                 }
             }

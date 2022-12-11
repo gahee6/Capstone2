@@ -7,8 +7,13 @@
     tools:context=".activity.MainActivity"
     android:orientation="vertical">
 
+    //메인화면
+    //리사이클러뷰, 버튼 등 화면 구성
+    //메인화면이랑 내 글 목록 화면의 리사이클러뷰, 버튼 id 달라야함
+    //MainAdd 누르면 심부름 글쓰는 화면으로 이동
+
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv"
+        android:id="@+id/MainRv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbarFadeDuration="0"
@@ -17,46 +22,12 @@
         android:scrollbars="vertical"
         android:layout_weight="1" >
 
-
     </androidx.recyclerview.widget.RecyclerView>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="메인이동"
-        android:id="@+id/btnMain"></Button>
-
-    <ToggleButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textOff="내신고글보기"
         android:id="@+id/btnMyToggle"
-        ></ToggleButton>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <FrameLayout
-            android:id="@+id/main_frame"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1" >
-
-        </FrameLayout>
-
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomNavi"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            app:itemIconTint="#000000"
-            app:itemTextColor="#000000"
-            app:menu="@menu/bottom_menu" />
-
-
-    </LinearLayout>
-
+        android:text="버튼" />
 
 </LinearLayout>
