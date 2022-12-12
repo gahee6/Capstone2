@@ -26,6 +26,5 @@
         <activity android:name=".activity.ReportCreateActivity"></activity>
         <activity android:name=".activity.ReportDetailActivity" ></activity>
         <activity android:name=".activity.ReportUpdateActivity"></activity>
-        <activity android:name=".activity.MyReportActivity"></activity>
     </application>
 </manifest>

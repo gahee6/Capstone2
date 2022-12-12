@@ -42,53 +42,61 @@ public class MainActivity extends AppCompatActivity {
     private Main main;
     private Board board;
     private Report report;
+    private MyReport myReport;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.main);
+            bottomNavigationView = findViewById(R.id.bottomNavi);
+            bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+                @Override
+                public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                    switch (menuItem.getItemId()) {
+                        case R.id.home:
+                            setFrag(0);
+                            break;
+                        case R.id.writing:
+                            setFrag(1);
+                            break;
+                        case R.id.report:
+                            setFrag(2);
+                            break;
+                        case R.id.mreport:
+                            setFrag(3);
+                            break;
+                    }
 
-        bottomNavigationView = findViewById(R.id.bottomNavi);
-        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                switch (menuItem.getItemId()) {
-                    case R.id.home:
-                        setFrag(0);
-                        break;
-                    case R.id.writing:
-                        setFrag(1);
-                        break;
-                    case R.id.report:
-                        setFrag(2);
-                        break;
+                    return true;
                 }
+            });
+            main = new Main();
+            board = new Board();
+            report = new Report();
+            myReport = new MyReport();
+            setFrag(0); //첫 프래그먼트 화면을 지정한다.
+        }
 
-                return true;
+        private void setFrag(int n){      //프래그먼트 교체가 일어나는 실행문
+            fm = getSupportFragmentManager();
+            ft = fm.beginTransaction();
+            switch (n) {
+                case 0:
+                    ft.replace(R.id.main_frame, main);
+                    ft.commit();
+                    break;
+                case 1:
+                    ft.replace(R.id.main_frame, board);
+                    ft.commit();
+                    break;
+                case 2:
+                    ft.replace(R.id.main_frame, report);
+                    ft.commit();
+                    break;
+                case 3:
+                    ft.replace(R.id.main_frame, myReport);
+                    ft.commit();
+                    break;
             }
-        });
-        main = new Main();
-        board = new Board();
-        report = new Report();
-        setFrag(0); //첫 프래그먼트 화면을 지정한다.
-    }
-
-    private void setFrag(int n){      //프래그먼트 교체가 일어나는 실행문
-        fm = getSupportFragmentManager();
-        ft = fm.beginTransaction();
-        switch (n) {
-            case 0:
-                ft.replace(R.id.main_frame, main);
-                ft.commit();
-                break;
-            case 1:
-                ft.replace(R.id.main_frame, board);
-                ft.commit();
-                break;
-            case 2:
-                ft.replace(R.id.main_frame, report);
-                ft.commit();
-                break;
         }
     }
-}

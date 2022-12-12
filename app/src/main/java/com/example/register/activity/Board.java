@@ -39,15 +39,11 @@ public class Board extends Fragment {
     private RecyclerView recyclerView;
     private LinearLayoutManager linearLayoutManager;
     RetrofitAPI retrofitAPI;
-    ToggleButton btnMyToggle;
     private final String MYIP = "http://192.168.2.28";
     private final String FRIP = "http://192.168.3.134";
     private final String RESTIP = "http://172.16.153.145";
     private final String BASEURL = FRIP+":9090/board/";
 
-    private void init(){
-        btnMyToggle = (ToggleButton) view.findViewById(R.id.btnMyToggle);
-    }
 
     private void getMyBoard(String memberId) {
         Call<java.util.List<BoardReceivedDTO>> call = retrofitAPI.getMyBoard(memberId);
@@ -105,18 +101,7 @@ public class Board extends Fragment {
                 .build();
         retrofitAPI = retrofit.create(RetrofitAPI.class);
 
-        init();
         getMyBoard(Member.getInstance().getStudentNum());
-
-        btnMyToggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    Intent intent = new Intent(getActivity(), MyReportActivity.class);
-                    startActivity(intent);
-                }
-            }
-        });
 
         return view;
     }
